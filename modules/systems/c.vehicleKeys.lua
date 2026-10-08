@@ -1,10 +1,10 @@
-CreateThread( function() 
+CreateThread( function()
     --[[
         This file defines a custom vehicle keys system
         It contains the following data properties:
         - @plate: The vehicle plate.
         - @vehicle: The vehicle entity.
-    ]]  
+    ]]
     if Shared.VehicleKeys == "qb-vehiclekeys" then
         Core.AddVehicleKeys = function(plate, vehicle)
             TriggerEvent("vehiclekeys:client:SetOwner", plate)
@@ -42,6 +42,13 @@ CreateThread( function()
         end
         Core.RemoveVehicleKeys = function(plate, vehicle)
             exports['Renewed-Vehiclekeys']:removeKey(plate)
+        end
+    elseif Shared.VehicleKeys == "MrNewbVehicleKeys" then
+        Core.AddVehicleKeys = function(plate, vehicle)
+            exports['MrNewbVehicleKeys']:GiveKeysByPlate(plate)
+        end
+        Core.RemoveVehicleKeys = function(plate, vehicle)
+            exports['MrNewbVehicleKeys']:RemoveKeysByPlate(plate)
         end
     elseif Shared.VehicleKeys == "cd_garage" then
         Core.AddVehicleKeys = function(plate, vehicle)

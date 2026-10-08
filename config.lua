@@ -1,6 +1,6 @@
 Shared = {}
 
-Shared.DevelopmentMode = false -- Set to true if you want to enable development mode. This will enable additional features for development purposes, such as the prop generator. 
+Shared.DevelopmentMode = false -- Set to true if you want to enable development mode. This will enable additional features for development purposes, such as the prop generator.
 
 -- This module contains shared configuration settings for the dh_lib.
 -- vRP support is currently in beta. Please report any issues you encounter, check before using in production environments.
@@ -11,8 +11,8 @@ Shared.Framework = "AUTO DETECT"
 -- The target system being used. Possible targets: "AUTO DETECT", "ox_target", "qb-target", "ak47_target", "standalone", "custom" , "vrp"
 Shared.Target = "AUTO DETECT"
 
--- Vehicle keys system being used. Possible vehicle keys: "AUTO DETECT", "qb-vehiclekeys", "qs-vehiclekeys", "ak47_vehiclekeys", "t1ger_keys", "Renewed-Vehiclekeys", "cd_garage", "custom"
-Shared.VehicleKeys = "AUTO DETECT" 
+-- Vehicle keys system being used. Possible vehicle keys: "AUTO DETECT", "qb-vehiclekeys", "qs-vehiclekeys", "ak47_vehiclekeys", "t1ger_keys", "Renewed-Vehiclekeys", "cd_garage", "MrNewbVehicleKeys" "custom"
+Shared.VehicleKeys = "AUTO DETECT"
 
 -- Fuel system being used. Possible fuel systems: "AUTO DETECT", "LegacyFuel", "ps-fuel", "ox_fuel", "cd_fuel", "rcore_fuel", "custom"
 Shared.VehicleFuel = "AUTO DETECT"
@@ -23,7 +23,7 @@ Shared.VehicleFuel = "AUTO DETECT"
 Shared.LicenseSystem = "AUTO DETECT"
 
 -- Inventory system being used. Possible inventory systems: "AUTO DETECT", "ox_inventory", "qb-inventory", "tgiann-inventory", "ak47_inventory", "codem-inventory", "core_inventory", "qs-inventory",  "custom"
-Shared.InventorySystem = "AUTO DETECT" 
+Shared.InventorySystem = "AUTO DETECT"
 
 -- Enable compatibility tests for the selected framework. !!WARNING!! This must be turned off in production environments.
 Shared.CompatibilityTest = false
@@ -41,7 +41,7 @@ Shared.CompatibilityTest = false
 
 -- qb-core/shared/items.lua
 -- ["dh_test"] = {
---     ["name"] = "dh_test",                                                        
+--     ["name"] = "dh_test",
 --     ["label"] = "DEVHUB TEST",
 --     ["weight"] = 1,
 --     ["type"] = "item",

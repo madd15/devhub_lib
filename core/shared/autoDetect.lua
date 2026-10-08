@@ -44,11 +44,14 @@ VEHICLE_KEYS_RESOURCES = {
     ['Renewed-Vehiclekeys'] = {
         "Renewed-Vehiclekeys",
     },
+    ['MrNewbVehicleKeys'] = {
+        "MrNewbVehicleKeys",
+    },
     ['cd_garage'] = {
         "cd_garage",
     },
 }
- 
+
 LICENSE_RESOURCES = {
     ['devhub_licenses'] = {
         "devhub_licenses",
@@ -185,7 +188,7 @@ local function detectLicenseSystem()
     for name, resources in pairs(LICENSE_RESOURCES) do
         for _, resource in pairs(resources) do
             local state = GetResourceState(resource)
-           
+
             if state == "started" or state == "starting" then
                 return name, resource
             end
